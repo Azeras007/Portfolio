@@ -12,27 +12,11 @@
                     </div>
                 </ul>
             </nav>
-            <div class = "project">
-                <div class = "text">
-                    <div v-for="project in res" :key="project.id">
-                        {{project.url.split('/').pop()}}
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-
-@keyframes fade {
-    From {
-    Opacity : 0 ;
-    }
-    To {
-    Opacity : 1 ;
-    }
-}
 
 .mainBox {
     display: flex;
@@ -44,15 +28,15 @@
 }
 
 #wrap {
-        width: 100vw;
-        height: 50px;
-        margin: 0;
-        z-index: 99;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: gray;
-      }
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: gray;
+}
 .navbar {
   height: 50px;
   padding: 0;
@@ -129,8 +113,3 @@
 }
 
 </style>
-
-<script setup>
-    let res = await $fetch('/api/hello')
-    console.log(res)
-</script>
