@@ -121,6 +121,7 @@
     margin: 0;
     right: 0;
     position: absolute;
+    width: min(50vw, 60px);
 }
 
 .text{

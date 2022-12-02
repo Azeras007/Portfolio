@@ -125,6 +125,7 @@
     margin: 0;
     right: 0;
     position: absolute;
+    width: min(50vw, 60px);
 }
 .bubble-text{
     background:rgb(36, 189, 179);
